@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -23,14 +23,26 @@
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu" class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
                         <ul class="block lg:flex">
-                            <li class="group"><a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a></li>
-                            <li class="group"><a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a></li>
-                            <li class="group"><a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a></li>
-                            <li class="group"><a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a></li>
-                            <li class="group"><a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a></li>
-                            <li class="group"><a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a></li>
+                            <li class="group"><a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a></li>
+                            <li class="group"><a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a></li>
+                            <li class="group"><a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a></li>
+                            <li class="group"><a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Clients</a></li>
+                            <li class="group"><a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a></li>
+                            <li class="group"><a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a></li>
+                            <li class="flex items-center pl-8 mt-3">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                                    <input type="checkbox" id="dark-toggle" class="hidden">
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -40,7 +52,7 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
@@ -349,6 +361,12 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Bact to top start -->
+    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14  items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+        <span class="bloack w-5 h-5 rotate-45 border-t-2 border-l-2 mt-2"></span>
+    </a>
+    <!-- Bact to top end -->
 
     <script src="dist/js/script.js"></script>
 </body>
